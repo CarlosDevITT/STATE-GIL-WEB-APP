@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="State.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="State.ico" />
-    <link rel="manifest" href="site.webmanifest" />
-
-    <link rel="stylesheet" href="./cookies/cookies.css" />  
-    <script src="./cookies/cookies.js"></script>
-
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2024/10/17/14/20241017144528-3UTAQFXS.js"></script>
-    
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="description" content="Manage your tasks effortlessly with our JavaScript Todos List App. Organize, prioritize, and track your to-dos seamlessly using this user-friendly web application." />
+    <meta name="keywords" content="JavaScript Todos List App, Task Management, To-Do List Web App, Organize Tasks, Track To-Dos, Simple Task Manager, Productivity Tool, User-Friendly Interface, Web-based Task Organizer, JavaScript Task Tracker" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/State.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="State.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="State.ico" />
+    <link rel="mask-icon" href="src/img/State.png" color="#5bbad5" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./cookies/cookies.css" />
+
+    <!-- Scripts -->
+    <script src="./cookies/cookies.js" defer></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2024/10/17/14/20241017144528-3UTAQFXS.js" defer></script>
+
+    <!-- Title -->
     <title>STATE ÁGIL</title>
-    <meta
-      name="description"
-      content="Manage your tasks effortlessly with our JavaScript Todos List App. Organize, prioritize, and track your to-dos seamlessly using this user-friendly web application."
-    />
-    <meta
-      name="keywords"
-      content="JavaScript Todos List App, Task Management, To-Do List Web App, Organize Tasks, Track To-Dos, Simple Task Manager, Productivity Tool, User-Friendly Interface, Web-based Task Organizer, JavaScript Task Tracker"
-    />
-  </head>
+</head>
   <body>
     <div class="wrapper">
       <div class="screen-backdrop"></div>
@@ -49,6 +50,7 @@
               />
             </svg>
           </div>
+
           <div class="welcome">
             <div class="content">
               <h1>CARLOS DOMINGOS</h1>
@@ -60,6 +62,7 @@
             </div>
           </div>
         </div>
+        
         <div class="categories-wrapper">
           <div class="categories">
             <div class="category">
@@ -70,6 +73,7 @@
                   <p>5 Tarefas</p>
                 </div>
               </div>
+
               <div class="options">
                 <div class="toggle-btn">
                   <svg
@@ -196,17 +200,17 @@
       <div class="black-backdrop"></div>
       <div class="add-task">
         <div class="add-task-backdrop"></div>
-        <h1 class="heading">Add Task</h1>
+        <h1 class="heading">ADD TAREFA</h1>
         <div class="input-group">
-          <label for="task-input"> Task </label>
+          <label for="task-input"> TAREFA </label>
           <input type="text" id="task-input" required />
         </div>
         <div class="input-group">
-          <label for="category-select"> Category </label>
+          <label for="category-select"> Categoria </label>
           <select id="category-select"></select>
         </div>
         <div class="btns">
-          <button class="cancel-btn">Cancel</button>
+          <button class="cancel-btn">Cancelar</button>
           <button class="add-btn">Add</button>
         </div>
       </div>
